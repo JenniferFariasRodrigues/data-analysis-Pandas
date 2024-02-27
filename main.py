@@ -3,8 +3,6 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-
 # importar base de dados
 import pandas as pd
 # enviar e-mail
@@ -50,13 +48,12 @@ print(ticket_medio)
 print('-' * 50)
 print(('ENVIAR E-MAIL COM RELATORIO'))
 
-# tentativa com outlook
+# tentativa com outlook-ok
 outlook.user_name = "jennifer_tro@hotmail.com"
 outlook.password = ""
 outlook.send(
     receivers=["jennifer_tro@hotmail.com"],
     subject="Relatório de Vendas por Loja",
-
     html = f'''
 <p>Prezados,</p>
 <p>Segue o Relatório de vendas por cada loja.</p>
